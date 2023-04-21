@@ -1,5 +1,7 @@
 <script setup>
-
+import { ref } from 'vue';
+import { useAuthStore } from '../stores/authStore';
+import { useRouter } from 'vue-router';
 
 </script>
 
