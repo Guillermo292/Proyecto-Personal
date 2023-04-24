@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 const router = useRouter();
 
+
 </script>
 
 
@@ -18,14 +19,18 @@ const router = useRouter();
             </div>
             <input v-model="password" type="password" class="form-control form-control" id="password" required
                 style="border-radius: 8px;">
-            <v-btn>Button</v-btn>
+            <!-- <v-btn>Button</v-btn> -->
+
+            <button class="btn btn-primary hvr-grow">
+                Pincha aqui
+            </button>
         </div>
         <div class="imagen1">
             <img class="uno" src="../assets/img/fotter1.jpg" alt="">
             <img class="dos" src="../assets/img/fotter2.jpg" alt="">
         </div>
-      
-  
+
+
 
     </div>
 </template>
@@ -53,19 +58,34 @@ const router = useRouter();
     border-radius: 8px;
 }
 
-.imagen1{
+.imagen1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.uno{
+
+.uno {
     display: flex;
     justify-content: end;
     width: 20%;
 }
-.dos{
-display: flex;
-justify-content: center;
-width: 20%;
+
+.dos {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+// @import 'variables';
+
+.btn {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+  padding: 0px 1px;
+  margin-top: 5%;
 }
 </style>
