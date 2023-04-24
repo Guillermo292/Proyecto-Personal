@@ -1,14 +1,15 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import Login from "../components/Login.vue"
-
+import Card from "../components/Card.vue"
 // const router = createRouter({ history: createWebHistory(import.meta.env.BASE_URL),})
 
 </script>
 
 <template>
     <main>
-        <Login />
+        <!-- <Login /> -->
+    <Card />
     </main>
 
 </template>
