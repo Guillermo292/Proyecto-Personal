@@ -8,42 +8,50 @@
     <div class="card">
       <img src="../assets/img/fotter1.jpg" alt="">
       <p>DOCTOR PEPIN</p>
+      <p>Telf 59473939</p>
     </div>
 
     <div class="card">
       <img src="../assets/img/fotter2.jpg" alt="">
       <p>DOCTOR PEPON</p>
+      <p>Tlef 847630</p>
     </div>
 
     <div class="card">
       <img src="../assets/img/porti5.jpg" alt="">
       <p>DOCTORA MARY</p>
+      <p>Telf 999293</p>
     </div>
 
     <div class="card">
       <img src="../assets/img/porti6.jpg" alt="">
       <P>DOCTORA PURI</P>
+      <p>Telf 9383830</p>
     </div>
 
     <div class="card">
       <img src="../assets/img/porti7.jpg" alt="">
       <p>DOCTOR DAZA</p>
+      <p>Telf 01020304</p>
     </div>
 
  
     <div class="card">
       <img src="../assets/img/porti8.jpg" alt="">
       <p>DOCTOR MANUEL</p>
+      <p>Telf 561239</p>
     </div>
 
     <div class="card">
       <img src="../assets/img/porti9.jpg" alt="">
       <p>DOCTOR ENOL</p>
+      <p>Telf 666999</p>
     </div>
 
     <div class="card">
       <img src="../assets/img/porti10.jpg" alt="">
       <p>DOCTOR SAUL</p>
+      <p>Telf 920174</p>
     </div>
 
 
@@ -76,7 +84,7 @@ main {
 
   img {
     width: 10em;
-    height: 12em;
+    height: 9em;
   }
 }
 
