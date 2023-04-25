@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 const router = useRouter();
 const shotList = ()=>{
-router.push({name: 'list',path: '/profileview'})
+router.push('/profileview')
 }
 
 </script>
@@ -14,6 +14,9 @@ router.push({name: 'list',path: '/profileview'})
 <template>
     <div class="mainContainer">
         <div class="microheader">
+            
+                <img class="logo" src="../assets/img/Captura de pantalla (138).png" alt="">
+            
             <label for="username"><span> * </span>Nombre de usuario</label>
             <input v-model="userName" type="text" class="form-control" id="name" required style="border-radius: 8px;">
             <div class="contra">
@@ -23,7 +26,7 @@ router.push({name: 'list',path: '/profileview'})
                 style="border-radius: 8px;">
             <!-- <v-btn>Button</v-btn> -->
 
-            <button class="btn btn-primary hvr-grow" @click= "shotList()">
+            <button class="btn btn-primary hvr-grow" @click="shotList">
                 Pincha aqui
             </button>
         </div>
@@ -45,6 +48,16 @@ router.push({name: 'list',path: '/profileview'})
     flex-direction: column;
     justify-content: space-between;
     padding: 2% 5%;
+
+    .logo{
+        display: flex;
+        margin-top: 3px;
+        width: 8em;
+        position: absolute;
+        top: 60px;
+        border-radius: 50%;
+        right: 170px;
+    }
 }
 
 .microheader {
