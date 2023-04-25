@@ -1,59 +1,100 @@
-<script >
-import { useRouter } from 'vue-router';
-const router = useRouter();
-
-export default {
-  data() {
-    return {
-      name: '',
-      profession: '',
-      phone: '',
-      book: {}
-    };
-  },
-  created() {
-    this.fetchData();
-  },
-  methods: {
-    async fetchData() {
-      const response = await fetch('book.json');
-      const data = await response.json();
-      this.book = data;
-    }
-  }
-}
+<script>
 
 </script>
 
-
-
-
 <template>
-    <div class="form-group">
-    <input v-model="formData.name" type="text" class="form-control" placeholder="Nombre">
-    <input v-model="formData.profession" type="text" class="form-control" placeholder="Profesión">
-    <input v-model="formData.phone" type="text" class="form-control" placeholder="Número de teléfono">
+  <div class="container">
 
-</div>
+    <div class="card">
+      <img src="../assets/img/fotter1.jpg" alt="">
+      <p>DOCTOR PEPIN</p>
+    </div>
+
+    <div class="card">
+      <img src="../assets/img/fotter2.jpg" alt="">
+      <p>DOCTOR PEPON</p>
+    </div>
+
+    <div class="card">
+      <img src="../assets/img/porti5.jpg" alt="">
+      <p>DOCTORA MARY</p>
+    </div>
+
+    <div class="card">
+      <img src="../assets/img/porti6.jpg" alt="">
+      <P>DOCTORA PURI</P>
+    </div>
+
+    <div class="card">
+      <img src="../assets/img/porti7.jpg" alt="">
+      <p>DOCTOR DAZA</p>
+    </div>
+
+ 
+    <div class="card">
+      <img src="../assets/img/porti8.jpg" alt="">
+      <p>DOCTOR MANUEL</p>
+    </div>
+
+    <div class="card">
+      <img src="../assets/img/porti9.jpg" alt="">
+      <p>DOCTOR ENOL</p>
+    </div>
+
+    <div class="card">
+      <img src="../assets/img/porti10.jpg" alt="">
+      <p>DOCTOR SAUL</p>
+    </div>
+
+
+   
+
+  </div>
 </template>
 
-
-
 <style lang="scss" scoped>
-.form-control {
+@import "../assets/scss/main.scss";
+
+
+main {
+  display: flex;
   width: 100%;
-  height: 40px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: 1px solid black;
-  border-radius: 8px;
+  height: 100vh;
+  background-image: url("../assets/img/fotter2");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-label {
-  display: block;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  color:grey;
+.card {
+  width: 15em;
+  height: 20em;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 10em;
+    height: 12em;
+  }
 }
 
+.container {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+p{
+  display: flex;
+  width: 10em;
+  background-color: rgba(194, 197, 187, 0.993);
+  border-radius: 2px;
+  color: black;
+  justify-content: center;
+  height: 1.5em;
+  align-items: center;
+}
 </style>

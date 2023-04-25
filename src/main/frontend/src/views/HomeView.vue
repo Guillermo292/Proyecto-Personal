@@ -8,8 +8,8 @@ import Card from "../components/Card.vue"
 
 <template>
     <main>
-        <!-- <Login /> -->
-    <Card />
+        <Login />
+    <!-- <Card /> -->
     </main>
 
 </template>

@@ -3,7 +3,9 @@ import { ref } from 'vue';
 // import { useAuthStore } from '../stores/authStore';
 import { useRouter } from 'vue-router';
 const router = useRouter();
-
+const shotList = ()=>{
+router.push({name: 'list',path: '/profileview'})
+}
 
 </script>
 
@@ -21,7 +23,7 @@ const router = useRouter();
                 style="border-radius: 8px;">
             <!-- <v-btn>Button</v-btn> -->
 
-            <button class="btn btn-primary hvr-grow">
+            <button class="btn btn-primary hvr-grow" @click= "shotList()">
                 Pincha aqui
             </button>
         </div>
