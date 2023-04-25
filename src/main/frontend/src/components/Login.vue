@@ -83,12 +83,14 @@ router.push('/profileview')
     display: flex;
     justify-content: end;
     width: 20%;
+    border-radius: 8%;
 }
 
 .dos {
     display: flex;
     justify-content: center;
     width: 20%;
+    border-radius: 8%;
 }
 
 // @import 'variables';
